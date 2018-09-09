@@ -1,28 +1,57 @@
 body {
-	margin: -1px;
+	margin: auto;
 	overflow: hidden;
 }
 
 body, html {
+	margin: auto;
 	height: 100%;
 	position: relative;
 }
 
 .console {
-	background-color: green;
+	/*background-color: green;*/
 	position: absolute;
-	margin: auto;
+	margin: auto !important;
      top: 0;
      right: 0;
      bottom: 0;
      left: 0;
 	/*top: 10%;*/
-	width: 60%;
-	height: 80%;
+	width: 50%;
+	height: 70%;
 	/*left: 20%;*/
 	z-index: 999;
 	cursor: move;
+	border-WIDTH: 7;
+    border-style: ridge;
+    border-color: #FF00FF;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=yellow, direction=135, strength=14);
+    box-shadow: 9px 9px 14px yellow;
+	
 }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}    
+/*video {*/
+/*    height: auto;*/
+/*    min-height:100%;*/
+/*    width: 100%;*/
+/*    min-width: 100%;*/
+/*}*/
 
 .player{
 	
@@ -354,7 +383,7 @@ a:hover {
      right: 0;
      bottom: 0;
      left: 0;
-    width: 1200px;
+  
     height: 150px;
 	/*border: 1px black solid;*/
 
