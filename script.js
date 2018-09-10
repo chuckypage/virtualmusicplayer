@@ -96,6 +96,9 @@ $(document).ready(function() {
     });
 });
 
+
+
+
 // var currentAudio = 0;
 // var audioClasses = [ 'barbiehorse.mp3', 'powerbeauty.mp3', 'groove.m4a', 'beautiful.m4a', 'elevator.m4a', 'perfectbody.mp3'];
 // var songs = []
