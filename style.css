@@ -33,7 +33,12 @@ body, html {
 	
 /*}*/
 
-
+/*#email{*/
+/*	z-index: 200;*/
+/*	position: absolute;*/
+/*	border: 2px pink solid;*/
+/*	background-color: pink;*/
+/*}*/
 
 .embed {
 	/*z-index: 200;*/
@@ -46,6 +51,31 @@ max-width: 560px;
 
 }
 
+.playerskin{
+	width: 40%;
+  height: 50%;
+  position: absolute;
+  	margin: auto !important;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: limegreen;
+     /*background-image: repeating-radial-gradient(BLACK, #FF00FF 10%, RED 15%);*/
+   background-image: linear-gradient(90deg, #FF00FF, BLUE);
+   background-image: linear-gradient( PINK 1% , #FF00FF, #cc0c9c, #ad0c85, #701ea0, BLUE 110%);
+   border-radius: 60px;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat
+     
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  /*box-shadow: 9px 9px 14px yellow;*/
+	-webkit-filter: drop-shadow(0px 0px 5px BLACK);
+}
+
 .aspect-ratio {
 	margin: auto !important;
      top: 0;
@@ -53,15 +83,16 @@ max-width: 560px;
      bottom: 0;
      left: 0;
   position: absolute;
-  width: 35%;
-  height: 35%;
+  width: 45%;
+  height: 45%;
 background-color: black;
 border-WIDTH: 7;
-    border-style: ridge;
+border: 6px;
+    border-style: ridge ;
     border-color: #FF00FF;
     filter: progid:DXImageTransform.Microsoft.Shadow(color=yellow, direction=135, strength=14);
-    box-shadow: 9px 9px 14px yellow;
-    
+    /*box-shadow: 9px 9px 14px yellow;*/
+     border-radius: 25px;
     
 }
 .aspect-ratio embed {
@@ -73,11 +104,11 @@ border-WIDTH: 7;
   width: 100%;
   height: 100%;
    overflow: hidden;
-   
+    border-radius: 25px;
   /*left: 0; top: 0;*/
 }
 
-.emailbox {
+#emailbox {
 	/*border: 1px solid red;*/
 	width: 80px;
 	height: 70px;
@@ -96,7 +127,7 @@ border-WIDTH: 7;
     -webkit-filter: drop-shadow(0px 0px 8px Hotpink);
 }
 
-.emailbox:hover {
+#emailbox:hover {
 	-webkit-filter: drop-shadow(0px 0px 8px #f900b7);
 	
 }
@@ -158,12 +189,12 @@ border-WIDTH: 7;
 	/*background-color: limegreen;*/
 }
 
-#play {
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	color: limegreen;
+/*#play {*/
+/*	padding-left: 20px;*/
+/*	padding-right: 20px;*/
+/*	padding-top: 20px;*/
+/*	padding-bottom: 20px;*/
+/*	color: limegreen;*/
 	/*width: 200px;*/
 	/*height: 200px;*/
 	/*background-position: contain;*/
@@ -172,43 +203,58 @@ border-WIDTH: 7;
 	/*bottom: 0;*/
 	/*right:0;*/
 	/*top: 0;*/
-    z-index: 0;
-    text-align: center;
+/*    z-index: 0;*/
+/*    text-align: center;*/
 	
-	font-family: cursive;
-	font-weight: bolder;
-	font-size: 120%;
+/*	font-family: cursive;*/
+/*	font-weight: bolder;*/
+/*	font-size: 120%;*/
 	/*position: relative;*/
-	z-index: 200;
+/*	z-index: 200;*/
 	/*background-color: limegreen;*/
 	/*border: 1.5px yellow solid;*/
-	background-size: contain;
-	background-position: center;
+/*	background-size: contain;*/
+/*	background-position: center;*/
+/*	background-repeat: no-repeat;*/
+/*	background-image: url(rainplay.png);*/
+/*	width: 100%;*/
+/*	height: 50px;*/
+/*   color: limegreen;*/
+/*   text-shadow:*/
+/*     -1px -1px 0 red,  */
+/*      1px -1px 0 blue,*/
+/*      -1px 1px 0 blue,*/
+/*       1px 1px 0 blue;*/
+/*       -webkit-filter: drop-shadow(0px 0px 8px hotpink);*/
+/*	-webkit-transition: background-size 0.2s;*/
+	
+
+/*}*/
+#play {
+
+	cursor: pointer;
+	left: 40%;
+	bottom: 10%;
+	width: 200%;
+	height: 10%;
+	/*background-image: url(starframe.png);*/
+	/*border: 1px solid black;*/
+	background-size: 40% 100%;
 	background-repeat: no-repeat;
-	background-image: url(rainplay.png);
-	width: 100%;
-	height: 50px;
-   color: limegreen;
-   text-shadow:
-     -1px -1px 0 red,  
-      1px -1px 0 blue,
-      -1px 1px 0 blue,
-       1px 1px 0 blue;
-       -webkit-filter: drop-shadow(0px 0px 8px hotpink);
-	-webkit-transition: background-size 0.2s;
-	
-
+	background-position: center;
+	-webkit-filter: drop-shadow(0px 2px 2px black);
+	-webkit-transition: width 0.3s, height 0.3s, background-size 0.3s;
 }
 
-#play:hover{
-	opacity: 0.8;
-	filter: saturate(10);
+#play:hover {
+
+	filter: saturate(1);
+	width: 10%;
+	-webkit-filter: drop-shadow(0px 2px 2px yellow);
 	
 }
 
-.player-control {
-	font-style: oblique;
-}
+
 
 #pause {
 	/*padding-left: 5px;*/
@@ -226,8 +272,16 @@ border-WIDTH: 7;
 	font-size: 200%;
 	/*position: relative;*/
 	z-index: 200;
-	background-color: hotpink;
-	border: 1.5px yellow solid;
+	-webkit-filter: drop-shadow(0px 2px 2px black);
+	-webkit-transition: width 0.3s, height 0.3s, background-size 0.3s;
+	/*background-color: hotpink;*/
+	/*border: 1.5px yellow solid;*/
+}
+
+#pause:hover {
+	
+	filter: saturate(1);
+	-webkit-filter: drop-shadow(0px 2px 2px yellow);
 }
 
 #next {
@@ -246,11 +300,18 @@ border-WIDTH: 7;
 	font-size: 200%;
 	/*position: relative;*/
 	z-index: 200;
-	background-color: hotpink;
-	border: 1.5px yellow solid;
+	/*background-color: hotpink;*/
+	/*border: 1.5px yellow solid;*/
 	text-decoration: none; 
     decoration: none; 
+    -webkit-filter: drop-shadow(0px 2px 2px black);
+	-webkit-transition: width 0.3s, height 0.3s, background-size 0.3s;
 	
+}
+
+#next:hover {
+	filter: saturate(1);
+	-webkit-filter: drop-shadow(0px 2px 2px yellow);
 }
 
 #prev {
@@ -269,12 +330,18 @@ border-WIDTH: 7;
 	font-size: 200%;
 	/*position: relative;*/
 	z-index: 200;
-	background-color: hotpink;
-	border: 1.5px yellow solid;
+	/*background-color: hotpink;*/
+	/*border: 1.5px yellow solid;*/
 	text-decoration: none; 
     decoration: none; 
+    -webkit-filter: drop-shadow(0px 2px 2px black);
+	-webkit-transition: width 0.3s, height 0.3s, background-size 0.3s;
 }
 
+#prev:hover {
+	filter: saturate(1);
+	-webkit-filter: drop-shadow(0px 2px 2px yellow);
+}
 
 /*html {*/
 
@@ -449,7 +516,7 @@ a:hover {
 
 .console-row {
     z-index: 100;
- 	position: fixed;
+ 	/*position: fixed;*/
      margin: auto;
      
      right: 0;
@@ -461,7 +528,7 @@ a:hover {
 	/*border: 1px yellow solid;*/
 	/*background-color: pink;*/
 	width: 100%;
-	height: 150px;
+	height: 60px;
 	background-position: center;
 	text-align: center;
 }
@@ -475,19 +542,20 @@ a:hover {
     /*    -ms-filter: "FlipH";*/
     z-index: 999999999;
     margin: auto;
-	left: 0;
-	bottom: 3%;
+	left: -85%;
+	bottom: 0;
+	/*position: fixed;*/
 	right:0;
-
+	position:fixed;
 	
 	
-	background-image: url(diamondback.gif);
+	background-image: url(prevarrow.png);
 	/*border: 1px solid black;*/
-	background-size: 40%;
+	background-size: 45%;
 	background-repeat: no-repeat;
 	background-position: center;
 	/*background-color: blue;*/
-	-webkit-filter: drop-shadow(0px 0px 8px hotpink);
+	-webkit-filter: drop-shadow(0px 0px 8px black);
 	-webkit-transition: background-size 0.2s;
 	text-align: center;
 	font-size: 150%;
@@ -504,11 +572,11 @@ a:hover {
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
-        height: 100%;
-        width: 20%;
+        height: 100px;
+        width: 25%;
         vertical-align: middle;
 	display: table-cell;
-	line-height: 90px; 
+
   /*line-height: 90px;*/
 
 }
@@ -518,8 +586,8 @@ a:hover {
     filter: saturate(20);
     cursor: pointer;
     z-index: 999999999;
-    background-size: 30%;
-    background-image: url(diamondback.gif);
+    background-size: 40%;
+    background-image: url(prevarrow.png);
     -webkit-filter: drop-shadow(0px 0px 10px #ff00a5), saturate;
    /* -webkit-filter: drop-shadow(6px 6px 6px hotpink);*/
   	/*filter: drop-shadow(6px 6px 6px hotpink);*/
@@ -527,22 +595,23 @@ a:hover {
 
 .console-forward{
     z-index: 100;
+    position:fixed;
 
     margin: auto;
     left:0;
-	bottom: 3%;
+	bottom: 0;
 	right: 0;
-    margin-left: 69%;
+    margin-left: 80%;
 
-	width: 20%;
-	height: 100%;
-	background-image: url(diamond.gif);
+	width: 25%;
+	height: 100px;
+	background-image: url(nextarrow.png);
 	/*border: 1px solid black;*/
-	background-size: 40%;
+	background-size: 45%;
 	background-repeat: no-repeat;
 	background-position: center;
 	/*background-color: grey;*/
-	-webkit-filter: drop-shadow(0px 0px 8px hotpink);
+	-webkit-filter: drop-shadow(0px 0px 8px black);
 	-webkit-transition: background-size 0.2s;
 	text-align: center;
 		-webkit-text-stroke: 1px;
@@ -568,8 +637,8 @@ a:hover {
 .console-forward:hover {
 	z-index: 999;
     cursor: pointer ;
-    background-image: url(diamond.gif);
-    background-size: 30%;
+    background-image: url(nextarrow.png);
+    background-size: 40%;
     filter: saturate(20);
      -webkit-filter: drop-shadow(0px 0px 10px #ff00a5), saturate;
 	/*-webkit-filter: drop-shadow(6px 6px 6px hotpink);*/

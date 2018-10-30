@@ -13,12 +13,13 @@
 
 
 
-<div class= "emailbox">
+<a href="mailto:chuck.page@outlook.com" id="emailbox"></a>
     
-</div>
-   
-   
-	
+
+
+
+
+
 <!--	<div class="console">-->
 <!--	    <div class="video-container">-->
 <!--	        <video src="BadDecisions.mp4" controls></video>-->
@@ -83,17 +84,12 @@
  
         <div class="console-hands">
         <div class='console-row'>
-				<div class= "console-back">PREV</div>
-				<div class= "console-forward">NEXT</div>
+				<div class= "console-back"></div>
+				<div class= "console-forward"></div>
 				
 			</div>
 		</div>
-		<div class="player">
-		<a href="#" id="play" class="player-control">Play</a>
-        <a href="#" id="pause" class="player-control">Pause</a>
-        <a href="#" id="next" class="player-control">Next</a>
-        <a href="#" id="prev" class="player-control">Prev</a>
-		</div>
+	
 		
 		<!--<div class="console-controls">-->
 			
@@ -106,15 +102,28 @@
 				
 		<!--	</div>-->
 
+<video autoplay loop muted playsinline>
+   <source src="image.mp4">
+</video>
+
 		</div>
 
 
-		
+	<div class="playerskin">	
 		
  	<div class="aspect-ratio">
-    <embed src="BadDecisions.mp4" height="315" width="560" webkit-playsinline webkit-playsinline="true" playsinline="true"frameBorder="0">
+    <embed src="BadDecisions.mp4" autoplay loop muted playsinline height="315" width="560" frameBorder="0">
 <embed>
     </div>
+    	<div class="player">
+		<a href="#" id="play" class="player-control" target="_blank"><img src="purpplay.png" width=14% /></a>
+        <a href="#" id="pause" class="player-control"  target="_blank"><img src="purppause.png" width=14% /></a>
+         <a href="#" id="prev" class="player-control"  target="_blank"><img src="purpprev.png" width=14% /></a>
+        <a href="#" id="next" class="player-control"  target="_blank"><img src="purpnex.png" width=14% /></a>
+       
+		</div>
+    </div>
+    
 
 </body>
 
